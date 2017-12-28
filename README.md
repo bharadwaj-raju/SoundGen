@@ -4,7 +4,7 @@ C program to generate sounds and music from (descriptions) of sound waves.
 
 ![plot](plot.png)
 
-[Sample music produced by PySoundGen](#sample-music)
+[Sample music produced by SoundGen](#sample-music)
 
 Waveform formula from ["wavfile: A Simple Sound Library", by Douglas Thain](https://www3.nd.edu/~dthain/courses/cse20211/fall2013/wavfile/).
 
