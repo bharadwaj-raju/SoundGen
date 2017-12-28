@@ -45,7 +45,7 @@ To generate sound from the above `tones.txt` file,
 
 will generate a wav file `output.wav` with audio as described above, and will play `output.wav`.
 
-Wav file produced by above command: [`sample/example.wav`](samples/example.wav?raw=true)
+Wav file produced by above command: [`sample/example.wav`](./sample/example.wav?raw=true)
 
 
 
