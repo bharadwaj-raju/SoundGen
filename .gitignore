@@ -1,3 +1,7 @@
+# Generated binary
+soundgen
+!soundgen.c
+
 # Prerequisites
 *.d
 
