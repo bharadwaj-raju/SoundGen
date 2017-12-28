@@ -88,6 +88,7 @@ int main(int argc, char * argv[]) {
 		tones[i].frequency = f;
 		tones[i].amplitude_perc = a;
 		total_duration += d;
+		free(lines[i]);
 	}
 
 	int total_samples = (int) (total_duration * WAVFILE_SAMPLES_PER_SECOND);
@@ -105,6 +106,7 @@ int main(int argc, char * argv[]) {
 		samples_done += n_samples;
 		printf("Tone %d: d=%f f=%f a=%f n_samp=%d samp_done=%d\n",
 				i, tones[i].duration, tones[i].frequency, tones[i].amplitude_perc, n_samples, samples_done);
+		free(wavepart);
 	}
 
 	FILE * out_fp = wavfile_open(argv[2]);
@@ -119,6 +121,9 @@ int main(int argc, char * argv[]) {
 	wavfile_close(out_fp);
 
 	fclose(tones_fp);
+
+	free(final_waveform);
+	free(lines);
 
 	char commandbuffer[512];
 
